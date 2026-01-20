@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Untuk Kekasihku ❤️</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Floating hearts animation */
+        .hearts {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 25px;
+            animation: float 15s infinite;
+            opacity: 0;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.7;
+            }
+            90% {
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .letter-container {
+            position: relative;
+            z-index: 10;
+            background: white;
+            max-width: 700px;
+            width: 100%;
+            padding: 60px 50px;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: slideIn 0.8s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .letter-header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #f06292;
+            padding-bottom: 20px;
+        }
+
+        .letter-header h1 {
+            color: #ec407a;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .letter-header .date {
+            color: #888;
+            font-style: italic;
+            font-size: 1em;
+        }
+
+        .letter-body {
+            color: #333;
+            line-height: 2;
+            font-size: 1.1em;
+            text-align: justify;
+        }
+
+        .letter-body p {
+            margin-bottom: 25px;
+            text-indent: 40px;
+        }
+
+        .letter-body p.greeting {
+            text-indent: 0;
+            font-weight: bold;
+            color: #ec407a;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .signature {
+            margin-top: 50px;
+            text-align: right;
+            font-style: italic;
+            color: #ec407a;
+            font-size: 1.2em;
+        }
+
+        .signature p {
+            margin-bottom: 10px;
+        }
+
+        .decoration {
+            text-align: center;
+            font-size: 2em;
+            margin: 30px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .letter-container {
+                padding: 40px 30px;
+            }
+
+            .letter-header h1 {
+                font-size: 2em;
+            }
+
+            .letter-body {
+                font-size: 1em;
+                line-height: 1.8;
+            }
+
+            .letter-body p {
+                text-indent: 20px;
+            }
+
+            .signature {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .letter-container {
+                padding: 30px 20px;
+            }
+
+            .letter-header h1 {
+                font-size: 1.8em;
+            }
+
+            .letter-body {
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hearts" id="hearts"></div>
+    
+    <div class="letter-container">
+        <div class="letter-header">
+            <h1>Surat Cinta Valentine 💖</h1>
+            <p class="date">14 Februari 2026</p>
+        </div>
+
+        <div class="letter-body">
+            <p class="greeting">Untuk Kekasihku Tersayang,</p>
+
+            <p>Di hari Valentine yang istimewa ini, aku ingin mengungkapkan perasaan yang selama ini membuncah di hatiku. Setiap detik bersamamu adalah momen berharga yang tak akan pernah bisa tergantikan oleh apapun di dunia ini.</p>
+
+            <p>Kamu adalah alasan mengapa aku tersenyum di pagi hari, mengapa aku bersemangat menjalani hari, dan mengapa aku selalu bersyukur setiap malam. Kehadiranmu dalam hidupku seperti cahaya yang menerangi setiap sudut gelap, membawa kehangatan dan kebahagiaan yang tak terkira.</p>
+
+            <p>Terima kasih telah menjadi kekasih yang luar biasa. Terima kasih atas setiap tawa yang kita bagikan, setiap kenangan indah yang kita ciptakan bersama, dan setiap dukungan yang kamu berikan saat aku terpuruk. Kamu bukan hanya kekasihku, tapi juga sahabat terbaik yang selalu ada untukku.</p>
+
+            <p>Aku berjanji akan terus menjaga cinta kita, menghargai setiap momen bersama, dan berusaha menjadi yang terbaik untukmu. Aku ingin kita terus tumbuh bersama, saling mendukung dalam meraih mimpi, dan menciptakan lebih banyak kenangan indah yang akan kita ceritakan kelak.</p>
+
+            <p>Happy Valentine's Day, Sayang! Aku mencintaimu lebih dari yang bisa diungkapkan dengan kata-kata. Kamu adalah segalanya bagiku, dan aku sangat bersyukur memilikimu dalam hidupku.</p>
+
+            <div class="decoration">❤️ 💕 ❤️</div>
+
+            <div class="signature">
+                <p>Dengan segenap cinta dan kasih sayang,</p>
+                <p><strong>Yang selalu menyayangimu</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Create floating hearts
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            const hearts = ['❤️', '💕', '💖', '💗', '💓'];
+            heart.innerHTML = hearts[Math.floor(Math.random() * hearts.length)];
+            heart.style.left = Math.random() * 100 + '%';
+            heart.style.animationDuration = (Math.random() * 10 + 10) + 's';
+            heart.style.animationDelay = Math.random() * 5 + 's';
+            document.getElementById('hearts').appendChild(heart);
+            
+            setTimeout(() => heart.remove(), 20000);
+        }
+
+        // Generate hearts periodically
+        setInterval(createHeart, 1500);
+        
+        // Create initial hearts
+        for(let i = 0; i < 15; i++) {
+            setTimeout(createHeart, i * 300);
+        }
+    </script>
+</body>
+</html>
